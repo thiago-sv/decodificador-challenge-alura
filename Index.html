@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <title>Decodificador</title>
+    <link rel="stylesheet" href="CSS/Style.css" />
+</head>
+
+<body>
+    <div class="container">
+
+        <header class="header">
+            <h1>
+                <img class="logo" src="Imagens/Vector.png" alt="Logo da Alura" />
+            </h1>
+        </header>
+
+        <main class="main">
+            <div class="text-area">
+                <label for="text"></label>
+                <textarea ype="text" id="text" class="texto" placeholder="Digite o seu texto" cols="30"
+                    rows="10"></textarea>
+
+                <p>*Apenas letras minúsculas e sem acento.</p>
+            </div>
+
+            <div class="botoes">
+                <input type="button" value="Criptografar" class="btCriptografar" />
+                <input type="button" value="Descriptografar" class="btDecriptografar" />
+            </div>
+        </main>
+
+        <aside class="aside">
+
+            <div class="resultado">
+                <p id="texto-resultante"></p>
+
+                <div id="info-aside">
+                    <img src="Imagens/High quality products 1 1.svg"
+                        alt="imagem de um boneco segurando uma lupa aguardando a mensagem que será criptografada"
+                        class="imagemAside">
+
+                    <p class="aguardando-mensagem">Nenhuma mensagem encontrada</p>
+
+                    <p class="mensagem-texto">Digite o texto que você deseja criptografar ou descriptografar</p>
+                </div>
+            </div>
+            <div class="botoes-aside">
+                <input type="button" value="Copiar" class="btCopiar" onclick="copiar()">
+                <input type="button" value="Limpar" class="btLimpar" onclick="limpar()">
+            </div>
+        </aside>
+
+        <footer class="footer">
+            <img class="logo" src="Imagens/Vector.png" alt="Logo da Alura">
+            <p class="copyright">© Copyright <a class="link" href="https://github.com/thiago-sv">Thiago-sv</a> 2022</p>
+        </footer>
+
+    </div>
+    <script src="JavaScript/Script.js"></script>
+</body>
+
+</html>
